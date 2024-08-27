@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+button {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(48, 91, 93);
+}
+
+.restaurants {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.restaurantDiv {
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  background-color: lemonchiffon;
+}
+
+.restaurant {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.restaurantInfo {
+  width: calc(100% - 320px);
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.restaurantNameType {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurantDesc {
+  padding: 10px 0;
+}
+
+.restaurantDaysDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: auto; /* Yeni eklendi */
+}
+
+.restaurantDays {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.day {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .restaurants {
+    width: 100%;
+  }
+
+  .restaurant {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurantInfo {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .restaurantNameType {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .restaurantDays {
+    justify-content: center;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .restaurantDiv {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .restaurantInfo {
+    width: 100%;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+}
