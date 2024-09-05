@@ -4,7 +4,7 @@
 
 **Client:** React(Vite), 
 
- Review live demo:https://restaurant-4234.netlify.app/
+ 
 
 ![alt text](public/screenshots/ss3.png)
 
